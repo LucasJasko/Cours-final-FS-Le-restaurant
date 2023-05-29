@@ -10,4 +10,110 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
+}
+
+.p1 {
+  font-weight: 100;
+  font-family: Allura;
+  color: #a67245;
+}
+
+.p2 {
+  text-transform: uppercase;
+  font-family: poppins;
+  color: #eee;
+}
+
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  height: 100vh;
+  color: #eee;
+}
+header nav {
+  margin: 0 auto;
+  width: 80%;
+  height: 70px;
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav ul li {
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-family: poppins;
+}
+header nav ul li:first-child {
+  font-weight: 100;
+  font-family: Allura;
+  color: #a67245;
+  text-transform: none;
+  font-size: 3rem;
+  color: #eee;
+  font-weight: 800;
+}
+header nav ul li i {
+  width: 100%;
+}
+header .header-cont {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+header .header-cont h1 {
+  font-size: 4rem;
+  line-height: 45px;
+}
+header .header-cont h1 .p2 {
+  letter-spacing: 15px;
+}
+header .header-cont img {
+  margin: 70px auto 40px;
+}
+header .header-cont p {
+  letter-spacing: 8px;
+  font-weight: 100;
+  font-size: 1rem;
+  font-family: roboto;
+  text-transform: uppercase;
+}
+
+main .top-main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+main .top-main .top-main-l {
+  background: white;
+}
+main .top-main .top-main-l .top-main-l-cont {
+  margin: 15px;
+  border: 1px dashed #a67245;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .top-main .top-main-l .top-main-l-cont h2 {
+  margin: 30px auto;
+  font-size: 2rem;
+  line-height: 15px;
+}
+main .top-main .top-main-l .top-main-l-cont h2 .p2 {
+  font-size: 1.1rem;
+  color: #21201e;
+}
+main .top-main .top-main-l .top-main-l-cont p {
+  margin: 20px auto;
+  color: #21201e;
+  font-family: roboto;
+  line-height: 23px;
+}
+main .top-main .top-main-r {
+  background: url(../img/store-01.jpg) center/cover;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,58 @@
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  height: 100vh;
+  color: $white;
+  nav {
+    margin: 0 auto;
+    width: 80%;
+    height: 70px;
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        width: 100%;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        font-family: poppins;
+        &:first-child {
+          @include title-p1;
+          text-transform: none;
+          font-size: 3rem;
+          color: $white;
+          font-weight: 800;
+        }
+        i {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .header-cont {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 4rem;
+      line-height: 45px;
+      .p2 {
+        letter-spacing: 15px;
+      }
+    }
+    img {
+      margin: 70px auto 40px;
+    }
+    p {
+      letter-spacing: 8px;
+      font-weight: 100;
+      font-size: 1rem;
+      font-family: roboto;
+      text-transform: uppercase;
+    }
+  }
+}
