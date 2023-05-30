@@ -10,6 +10,7 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
+  font-family: roboto;
 }
 
 .p1 {
@@ -22,6 +23,10 @@ body {
   text-transform: uppercase;
   font-family: poppins;
   color: #eee;
+}
+
+.pic {
+  border-radius: 150px;
 }
 
 header {
@@ -85,6 +90,9 @@ header .header-cont p {
   text-transform: uppercase;
 }
 
+main {
+  background: rgb(40, 40, 40);
+}
 main .top-main {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -100,7 +108,7 @@ main .top-main .top-main-l .top-main-l-cont {
   align-items: center;
 }
 main .top-main .top-main-l .top-main-l-cont h2 {
-  margin: 30px auto;
+  margin: 50px auto 30px;
   font-size: 2rem;
   line-height: 15px;
 }
@@ -111,9 +119,150 @@ main .top-main .top-main-l .top-main-l-cont h2 .p2 {
 main .top-main .top-main-l .top-main-l-cont p {
   margin: 20px auto;
   color: #21201e;
-  font-family: roboto;
   line-height: 23px;
+}
+main .top-main .top-main-l .top-main-l-cont .pic {
+  margin: 20px auto;
+  width: 70px;
+}
+main .top-main .top-main-l .top-main-l-cont .t1,
+main .top-main .top-main-l .top-main-l-cont .t2 {
+  font-weight: 600;
+}
+main .top-main .top-main-l .top-main-l-cont .t1 {
+  letter-spacing: 1px;
+}
+main .top-main .top-main-l .top-main-l-cont .t2 {
+  font-size: 0.8rem;
+  color: #b6b6b6;
+  text-transform: uppercase;
+  margin: 5px auto 30px;
 }
 main .top-main .top-main-r {
   background: url(../img/store-01.jpg) center/cover;
+}
+main .mid-main {
+  background: url(../img/bg-menu-01.jpg) no-repeat;
+  background-position-y: bottom;
+}
+main .mid-main h2 {
+  font-size: 2rem;
+  margin: 50px auto 40px;
+}
+main .mid-main .mid-main-menu {
+  margin: 0 auto;
+  max-width: 50%;
+  height: 1000px;
+}
+main .mid-main .mid-main-menu nav {
+  height: 90px;
+}
+main .mid-main .mid-main-menu nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .mid-main .mid-main-menu nav ul li {
+  padding-bottom: 8px;
+  color: #eee;
+  border-bottom: 1px solid #eee;
+}
+main .mid-main .mid-main-menu .mid-main-menu-cont {
+  border-top: 5px solid #a67245;
+  background: #eee;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, 1fr);
+}
+main .mid-main .mid-main-menu .mid-main-menu-cont div {
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  align-items: center;
+  margin: 20px;
+  height: 150px;
+  border-bottom: 1px dashed #b6b6b6;
+}
+main .mid-main .mid-main-menu .mid-main-menu-cont div p {
+  text-align: left;
+  line-height: 25px;
+}
+main .mid-main .mid-main-menu .mid-main-menu-cont div p .dish-name {
+  font-weight: 1000;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+main .mid-main .mid-main-menu .mid-main-menu-cont div .price {
+  font-weight: 900;
+  color: #a67245;
+}
+main .bot-main .bot-main-booking {
+  margin: 60px auto;
+  max-width: 65%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+main .bot-main .bot-main-booking .bot-main-booking-l {
+  color: #eee;
+  background: black;
+}
+main .bot-main .bot-main-booking .bot-main-booking-l div {
+  margin: 20px;
+  border: 1px dashed #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .bot-main .bot-main-booking .bot-main-booking-l div h2 {
+  margin: 25px auto;
+  line-height: 20px;
+}
+main .bot-main .bot-main-booking .bot-main-booking-l div h2 .p1 {
+  font-size: 2.5rem;
+  text-transform: none;
+  font-weight: 100;
+  font-family: Allura;
+  color: #a67245;
+}
+main .bot-main .bot-main-booking .bot-main-booking-l div h2 .p2 {
+  text-transform: uppercase;
+  font-family: poppins;
+  color: #eee;
+  letter-spacing: 1px;
+}
+main .bot-main .bot-main-booking .bot-main-booking-l div img {
+  margin: 10px auto;
+}
+main .bot-main .bot-main-booking .bot-main-booking-l div span {
+  text-transform: uppercase;
+  color: #a67245;
+  font-weight: 800;
+  margin: 30px auto;
+  font-size: 1.2rem;
+}
+main .bot-main .bot-main-booking .bot-main-booking-l div p {
+  width: 80%;
+}
+main .bot-main .bot-main-booking .bot-main-booking-r {
+  color: #21201e;
+  background: #eee;
+  display: flex;
+}
+main .bot-main .bot-main-booking .bot-main-booking-r div {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+main .bot-main .bot-main-booking .bot-main-booking-r div h2 .p2 {
+  color: #21201e;
+}
+main .bot-main .bot-main-booking .bot-main-booking-r form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+main .bot-main .bot-main-booking .bot-main-booking-r form #submit {
+  grid-column: 2;
+  grid-row: 3;
 }/*# sourceMappingURL=index.css.map */

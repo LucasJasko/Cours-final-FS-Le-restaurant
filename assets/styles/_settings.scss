@@ -27,6 +27,7 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
+  font-family: roboto;
 }
 
 .p1 {
@@ -34,4 +35,7 @@ body {
 }
 .p2 {
   @include title-p2;
+}
+.pic {
+  border-radius: 150px;
 }

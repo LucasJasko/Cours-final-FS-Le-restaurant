@@ -1,4 +1,5 @@
 main {
+  background: rgb(40, 40, 40);
   .top-main {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -11,7 +12,7 @@ main {
         flex-direction: column;
         align-items: center;
         h2 {
-          margin: 30px auto;
+          margin: 50px auto 30px;
           font-size: 2rem;
           line-height: 15px;
           .p2 {
@@ -22,13 +23,154 @@ main {
         p {
           margin: 20px auto;
           color: $black;
-          font-family: roboto;
           line-height: 23px;
+        }
+        .pic {
+          margin: 20px auto;
+          width: 70px;
+        }
+        .t1,
+        .t2 {
+          font-weight: 600;
+        }
+        .t1 {
+          letter-spacing: 1px;
+        }
+        .t2 {
+          font-size: 0.8rem;
+          color: $grey;
+          text-transform: uppercase;
+          margin: 5px auto 30px;
         }
       }
     }
     .top-main-r {
       background: url(../img/store-01.jpg) center/cover;
+    }
+  }
+  .mid-main {
+    background: url(../img/bg-menu-01.jpg) no-repeat;
+    background-position-y: bottom;
+    h2 {
+      font-size: 2rem;
+      margin: 50px auto 40px;
+    }
+    .mid-main-menu {
+      margin: 0 auto;
+      max-width: 50%;
+      height: 1000px;
+      nav {
+        height: 90px;
+        ul {
+          height: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          li {
+            padding-bottom: 8px;
+            color: $white;
+            border-bottom: 1px solid $white;
+          }
+        }
+      }
+      .mid-main-menu-cont {
+        border-top: 5px solid $brown;
+        background: $white;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, 1fr);
+        div {
+          display: grid;
+          grid-template-columns: 30% 60% 10%;
+          align-items: center;
+          margin: 20px;
+          height: 150px;
+          border-bottom: 1px dashed $grey;
+          p {
+            text-align: left;
+            line-height: 25px;
+            .dish-name {
+              font-weight: 1000;
+              font-size: 0.9rem;
+              text-transform: uppercase;
+            }
+          }
+          .price {
+            font-weight: 900;
+            color: $brown;
+          }
+        }
+      }
+    }
+  }
+  .bot-main {
+    .bot-main-booking {
+      margin: 60px auto;
+      max-width: 65%;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      .bot-main-booking-l {
+        color: $white;
+        background: black;
+        div {
+          margin: 20px;
+          border: 1px dashed $white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h2 {
+            margin: 25px auto;
+            line-height: 20px;
+            .p1 {
+              font-size: 2.5rem;
+              text-transform: none;
+              @include title-p1;
+            }
+            .p2 {
+              @include title-p2;
+              letter-spacing: 1px;
+            }
+          }
+          img {
+            margin: 10px auto;
+          }
+          span {
+            text-transform: uppercase;
+            color: $brown;
+            font-weight: 800;
+            margin: 30px auto;
+            font-size: 1.2rem;
+          }
+          p {
+            width: 80%;
+          }
+        }
+      }
+      .bot-main-booking-r {
+        color: $black;
+        background: $white;
+        display: flex;
+        div {
+          width: 80%;
+          height: 80%;
+          margin: auto;
+          h2 {
+            .p2 {
+              color: $black;
+            }
+          }
+        }
+        form {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          gap: 10px;
+          #submit {
+            grid-column: 2;
+            grid-row: 3;
+          }
+        }
+      }
     }
   }
 }
