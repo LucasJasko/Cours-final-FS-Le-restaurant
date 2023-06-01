@@ -198,10 +198,14 @@ main .mid-main .mid-main-menu .mid-main-menu-cont div .price {
 }
 main .bot-main {
   margin: 0 auto;
-  max-width: 65%;
   overflow: auto;
+  background: url(../img/gmap.jpg);
+  background-position: bottom;
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
 }
 main .bot-main .bot-main-booking {
+  max-width: 65%;
   margin: 60px auto;
   display: grid;
   grid-template-columns: 30% 70%;
@@ -324,13 +328,16 @@ main .bot-main img {
   margin: 20px auto;
 }
 main .bot-main .bot-main-event {
+  max-width: 65%;
   margin: 0 auto 50px;
   display: grid;
-  grid-template-columns: calc(60% - 20px) 40%;
+  grid-template-columns: calc(55% - 20px) 45%;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas: "one three" "two three";
   gap: 20px;
 }
 main .bot-main .bot-main-event .bot-main-event-1 {
+  grid-area: one;
   display: grid;
   grid-template-columns: 40% 60%;
   background: #eee;
@@ -344,16 +351,263 @@ main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div {
   height: 100px;
   width: 100px;
   margin: 70px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div .part1 {
+main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div p {
+  line-height: 20px;
+}
+main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div p .part1 {
   font-weight: 1000;
   font-size: 2rem;
 }
+main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  line-height: 50px;
+}
+main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r h4 {
+  margin-top: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r span {
+  color: #b6b6b6;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r button {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
 main .bot-main .bot-main-event .bot-main-event-2 {
-  grid-row: 2;
+  grid-area: two;
+  background: #eee;
+  display: grid;
+  grid-template-columns: 40% 60%;
   background: #eee;
 }
+main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l {
+  background: url(../img/event-02.jpg) center/cover no-repeat;
+}
+main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div {
+  color: #eee;
+  background: #21201e;
+  height: 100px;
+  width: 100px;
+  margin: 70px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div p {
+  line-height: 20px;
+}
+main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div p .part1 {
+  font-weight: 1000;
+  font-size: 2rem;
+}
+main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  line-height: 50px;
+}
+main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r h4 {
+  margin-top: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r span {
+  color: #b6b6b6;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r button {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
 main .bot-main .bot-main-event .bot-main-event-3 {
-  grid-column: 2;
+  grid-area: three;
+  background: url(../img/event-03.jpg) center/cover;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont {
+  height: calc(100% - 60px);
+  width: 100%;
+  margin: 30px;
   background: #eee;
+}
+main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-date {
+  color: #eee;
+  background: #21201e;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-date p {
+  line-height: 20px;
+}
+main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-date p .part1 {
+  font-weight: 1000;
+  font-size: 2rem;
+}
+main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt {
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 50px;
+}
+main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt h4 {
+  margin-top: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt span {
+  color: #b6b6b6;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt button {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  margin-top: 70px;
+  cursor: pointer;
+}
+main .bot-main .bot-main-quote {
+  max-width: 65%;
+  margin: 200px auto 300px;
+}
+main .bot-main .bot-main-quote div {
+  position: relative;
+  height: 300px;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .bot-main .bot-main-quote div p {
+  line-height: 30px;
+  margin: 70px auto 20px;
+  width: 90%;
+}
+main .bot-main .bot-main-quote div .partie1 {
+  margin: 10px auto;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+main .bot-main .bot-main-quote div .partie2 {
+  margin: 10px auto 50px;
+  color: #a67245;
+}
+main .bot-main .bot-main-quote div:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../img/avatar-02.jpg) center/cover;
+  border-radius: 150px;
+}
+
+footer {
+  height: 250px;
+  background: url(../img/bg-footer.jpg) center/cover;
+  color: #eee;
+}
+footer .footer-cont {
+  margin: 0 auto;
+  height: 100%;
+  width: 65%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 0.8rem;
+}
+footer .footer-cont .footer-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+}
+footer .footer-cont .footer-l h5 {
+  font-size: 3rem;
+  text-align: left;
+}
+footer .footer-cont .footer-l p {
+  line-height: 30px;
+  text-align: left;
+}
+footer .footer-cont .footer-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+footer .footer-cont .footer-r form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-cont .footer-r form label {
+  text-align: left;
+}
+footer .footer-cont .footer-r form input {
+  padding: 0 5px;
+  outline: none;
+  height: 30px;
+  margin-top: 10px;
+  text-align: left;
+  width: 40%;
+  color: #b6b6b6;
+  background: none;
+  opacity: 0.5;
+  border: 1px solid #a67245;
+}
+footer .footer-cont .footer-r div {
+  margin: 20px 0;
+  text-align: left;
+}
+footer .footer-cont .footer-r div i {
+  margin: 0 20px;
+  color: #b6b6b6;
 }/*# sourceMappingURL=index.css.map */
