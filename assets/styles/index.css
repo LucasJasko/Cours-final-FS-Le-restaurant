@@ -196,9 +196,13 @@ main .mid-main .mid-main-menu .mid-main-menu-cont div .price {
   font-weight: 900;
   color: #a67245;
 }
+main .bot-main {
+  margin: 0 auto;
+  max-width: 65%;
+  overflow: auto;
+}
 main .bot-main .bot-main-booking {
   margin: 60px auto;
-  max-width: 65%;
   display: grid;
   grid-template-columns: 30% 70%;
 }
@@ -253,16 +257,103 @@ main .bot-main .bot-main-booking .bot-main-booking-r div {
   height: 80%;
   margin: auto;
 }
+main .bot-main .bot-main-booking .bot-main-booking-r div h2 {
+  margin: 20px auto;
+  line-height: 30px;
+}
+main .bot-main .bot-main-booking .bot-main-booking-r div h2 .p1 {
+  font-size: 2.5rem;
+}
 main .bot-main .bot-main-booking .bot-main-booking-r div h2 .p2 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
   color: #21201e;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r form {
+main .bot-main .bot-main-booking .bot-main-booking-r div img {
+  margin: 20px auto;
+}
+main .bot-main .bot-main-booking .bot-main-booking-r div form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-rows: 1fr 1fr 100px;
+  align-items: center;
+  gap: 20px;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r form #submit {
+main .bot-main .bot-main-booking .bot-main-booking-r div form input,
+main .bot-main .bot-main-booking .bot-main-booking-r div form select,
+main .bot-main .bot-main-booking .bot-main-booking-r div form option {
+  font-weight: 600;
+  color: rgb(119, 119, 119);
+  text-align: left;
+  outline: none;
+  height: 50px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #b6b6b6;
+}
+main .bot-main .bot-main-booking .bot-main-booking-r div form #submit {
+  letter-spacing: 5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: #eee;
+  background: #21201e;
+  border: 1px solid #21201e;
+  border-radius: 50px;
   grid-column: 2;
   grid-row: 3;
+  cursor: pointer;
+  transition: 0.2s;
+}
+main .bot-main .bot-main-booking .bot-main-booking-r div form #submit:hover {
+  transform: translateX(5px);
+  box-shadow: 1px 1px 7px 0px rgba(33, 32, 30, 0.6117647059);
+}
+main .bot-main h2 {
+  margin: 30px auto 10px;
+  line-height: 32px;
+}
+main .bot-main h2 .p1 {
+  font-size: 2.2rem;
+}
+main .bot-main h2 .p2 {
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+}
+main .bot-main img {
+  margin: 20px auto;
+}
+main .bot-main .bot-main-event {
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: calc(60% - 20px) 40%;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+main .bot-main .bot-main-event .bot-main-event-1 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background: #eee;
+}
+main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l {
+  background: url(../img/event-01.jpg) center/cover no-repeat;
+}
+main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div {
+  color: #eee;
+  background: #21201e;
+  height: 100px;
+  width: 100px;
+  margin: 70px auto;
+}
+main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div .part1 {
+  font-weight: 1000;
+  font-size: 2rem;
+}
+main .bot-main .bot-main-event .bot-main-event-2 {
+  grid-row: 2;
+  background: #eee;
+}
+main .bot-main .bot-main-event .bot-main-event-3 {
+  grid-column: 2;
+  background: #eee;
 }/*# sourceMappingURL=index.css.map */

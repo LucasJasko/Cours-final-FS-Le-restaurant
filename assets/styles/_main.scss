@@ -104,9 +104,11 @@ main {
     }
   }
   .bot-main {
+    margin: 0 auto;
+    max-width: 65%;
+    overflow: auto;
     .bot-main-booking {
       margin: 60px auto;
-      max-width: 65%;
       display: grid;
       grid-template-columns: 30% 70%;
       .bot-main-booking-l {
@@ -155,21 +157,106 @@ main {
           height: 80%;
           margin: auto;
           h2 {
+            margin: 20px auto;
+            line-height: 30px;
+            .p1 {
+              font-size: 2.5rem;
+            }
             .p2 {
+              font-size: 1.7rem;
+              letter-spacing: 1px;
               color: $black;
             }
           }
-        }
-        form {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
-          gap: 10px;
-          #submit {
-            grid-column: 2;
-            grid-row: 3;
+          img {
+            margin: 20px auto;
+          }
+          form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 100px;
+            align-items: center;
+            gap: 20px;
+            input,
+            select,
+            option {
+              font-weight: 600;
+              color: rgb(119, 119, 119);
+              text-align: left;
+              outline: none;
+              height: 50px;
+              background: none;
+              border: none;
+              border-bottom: 1px solid $grey;
+            }
+            #submit {
+              letter-spacing: 5px;
+              font-weight: 800;
+              text-transform: uppercase;
+              text-align: center;
+              color: $white;
+              background: $black;
+              border: 1px solid $black;
+              border-radius: 50px;
+              grid-column: 2;
+              grid-row: 3;
+              cursor: pointer;
+              transition: 0.2s;
+              &:hover {
+                transform: translateX(5px);
+                box-shadow: 1px 1px 7px 0px #21201e9c;
+              }
+            }
           }
         }
+      }
+    }
+    h2 {
+      margin: 30px auto 10px;
+      line-height: 32px;
+      .p1 {
+        font-size: 2.2rem;
+      }
+      .p2 {
+        letter-spacing: 2px;
+        font-size: 1.7rem;
+      }
+    }
+    img {
+      margin: 20px auto;
+    }
+    .bot-main-event {
+      margin: 0 auto 50px;
+      display: grid;
+      grid-template-columns: calc(60% - 20px) 40%;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      .bot-main-event-1 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        background: $white;
+        .bot-main-event-1-l {
+          background: url(../img/event-01.jpg) center/cover no-repeat;
+          div {
+            color: $white;
+            background: $black;
+            height: 100px;
+            width: 100px;
+            margin: 70px auto;
+            .part1 {
+              font-weight: 1000;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+      .bot-main-event-2 {
+        grid-row: 2;
+        background: $white;
+      }
+      .bot-main-event-3 {
+        grid-column: 2;
+        background: $white;
       }
     }
   }
