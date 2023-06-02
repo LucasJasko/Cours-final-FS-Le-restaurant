@@ -1,0 +1,367 @@
+.bot-main {
+  margin: 0 auto;
+  overflow: auto;
+  .bot-main-booking {
+    max-width: 65%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    @media screen and (max-width: 1300px) {
+      display: block;
+    }
+    .bot-main-booking-l {
+      color: $white;
+      background: black;
+      div {
+        margin: 20px;
+        border: 1px dashed $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          margin: 25px auto;
+          line-height: 20px;
+          .p1 {
+            font-size: 2.5rem;
+            text-transform: none;
+            @include title-p1;
+          }
+          .p2 {
+            @include title-p2;
+            letter-spacing: 1px;
+          }
+        }
+        img {
+          margin: 10px auto;
+        }
+        span {
+          text-transform: uppercase;
+          color: $brown;
+          font-weight: 800;
+          margin: 30px auto;
+          font-size: 1.2rem;
+        }
+        p {
+          width: 80%;
+        }
+      }
+    }
+    .bot-main-booking-r {
+      color: $black;
+      background: $white;
+      display: flex;
+      div {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        h2 {
+          margin: 20px auto;
+          line-height: 30px;
+          .p1 {
+            font-size: 2.5rem;
+          }
+          .p2 {
+            font-size: 1.7rem;
+            letter-spacing: 1px;
+            color: $black;
+          }
+        }
+        img {
+          margin: 20px auto;
+        }
+        form {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 100px;
+          align-items: center;
+          gap: 20px;
+          input,
+          select,
+          option {
+            font-weight: 600;
+            color: rgb(119, 119, 119);
+            text-align: left;
+            outline: none;
+            height: 50px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid $grey;
+          }
+          #submit {
+            letter-spacing: 5px;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            color: $white;
+            background: $black;
+            border: 1px solid $black;
+            border-radius: 50px;
+            grid-column: 2;
+            grid-row: 3;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover {
+              transform: translateX(5px);
+              box-shadow: 1px 1px 7px 0px #21201e9c;
+            }
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    margin: 30px auto 10px;
+    line-height: 32px;
+    .p1 {
+      font-size: 2.2rem;
+    }
+    .p2 {
+      letter-spacing: 2px;
+      font-size: 1.7rem;
+    }
+  }
+  img {
+    margin: 20px auto;
+  }
+  .bot-main-event {
+    max-width: 65%;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: calc(55% - 20px) 45%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "one three"
+      "two three";
+    gap: 20px;
+
+    @media screen and (max-width: 1300px) {
+      display: block;
+    }
+    .bot-main-event-1 {
+      grid-area: one;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      background: $white;
+      .bot-main-event-1-l {
+        background: url(../img/event-01.jpg) center/cover no-repeat;
+        div {
+          color: $white;
+          background: $black;
+          height: 100px;
+          width: 100px;
+          margin: 70px auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            line-height: 20px;
+            .part1 {
+              font-weight: 1000;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+      .bot-main-event-1-r {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        line-height: 50px;
+        h4 {
+          margin-top: 10px;
+          font-weight: 100;
+          letter-spacing: 1px;
+          font-size: 1.3rem;
+        }
+        span {
+          color: $grey;
+          font-size: 0.9rem;
+          letter-spacing: 1px;
+        }
+        button {
+          font-weight: 600;
+          font-size: 1rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          background: none;
+          border: none;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    .bot-main-event-2 {
+      grid-area: two;
+      background: $white;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      background: $white;
+      .bot-main-event-2-l {
+        background: url(../img/event-02.jpg) center/cover no-repeat;
+        div {
+          color: $white;
+          background: $black;
+          height: 100px;
+          width: 100px;
+          margin: 70px auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            line-height: 20px;
+            .part1 {
+              font-weight: 1000;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+      .bot-main-event-2-r {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        line-height: 50px;
+        h4 {
+          margin-top: 10px;
+          font-weight: 100;
+          letter-spacing: 1px;
+          font-size: 1.3rem;
+        }
+        span {
+          color: $grey;
+          font-size: 0.9rem;
+          letter-spacing: 1px;
+        }
+        button {
+          font-weight: 600;
+          font-size: 1rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          background: none;
+          border: none;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    .bot-main-event-3 {
+      grid-area: three;
+      background: url(../img/event-03.jpg) center/cover;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      .bot-main-event-3-cont {
+        height: calc(100% - 60px);
+        width: 100%;
+        margin: 30px;
+        background: $white;
+        // sinon, on mets du padiing
+        .bot-main-event-3-cont-date {
+          color: $white;
+          background: $black;
+          height: 100px;
+          width: 100px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            line-height: 20px;
+            .part1 {
+              font-weight: 1000;
+              font-size: 2rem;
+            }
+          }
+        }
+        .bot-main-event-3-cont-txt {
+          padding: 20px;
+          margin: 0 auto;
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          line-height: 50px;
+          h4 {
+            margin-top: 10px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            font-size: 1.3rem;
+          }
+          span {
+            color: $grey;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+          }
+          button {
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background: none;
+            border: none;
+            margin-top: 70px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .bot-main-quote {
+    position: relative;
+    height: 600px;
+    div {
+      position: relative;
+      height: 300px;
+      background: $white;
+      max-width: 65%;
+      margin: 200px auto 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      p {
+        line-height: 30px;
+        margin: 70px auto 20px;
+        width: 90%;
+      }
+      .partie1 {
+        margin: 10px auto;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 1.3rem;
+      }
+      .partie2 {
+        margin: 10px auto 50px;
+        color: $brown;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url(../img/avatar-02.jpg) center/cover;
+        border-radius: 150px;
+      }
+    }
+    &:after {
+      content: "";
+      height: 350px;
+      width: 100%;
+      position: absolute;
+      background: url(../img/gmap.jpg) center/cover;
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}

@@ -8,6 +8,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   list-style: none;
   text-align: center;
   font-family: roboto;
@@ -52,6 +53,7 @@ header nav ul li {
   align-items: center;
   font-size: 0.8rem;
   font-family: poppins;
+  cursor: pointer;
 }
 header nav ul li:first-child {
   font-weight: 100;
@@ -64,6 +66,10 @@ header nav ul li:first-child {
 }
 header nav ul li i {
   width: 100%;
+  cursor: pointer;
+}
+header nav ul li i:hover {
+  transform: scale(1.3);
 }
 header .header-cont {
   height: 80%;
@@ -93,89 +99,92 @@ header .header-cont p {
 main {
   background: rgb(40, 40, 40);
 }
-main .top-main {
+
+.top-main {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-main .top-main .top-main-l {
+.top-main .top-main-l {
   background: white;
 }
-main .top-main .top-main-l .top-main-l-cont {
+.top-main .top-main-l .top-main-l-cont {
   margin: 15px;
   border: 1px dashed #a67245;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .top-main .top-main-l .top-main-l-cont h2 {
+.top-main .top-main-l .top-main-l-cont h2 {
   margin: 50px auto 30px;
   font-size: 2rem;
   line-height: 15px;
 }
-main .top-main .top-main-l .top-main-l-cont h2 .p2 {
+.top-main .top-main-l .top-main-l-cont h2 .p2 {
   font-size: 1.1rem;
   color: #21201e;
 }
-main .top-main .top-main-l .top-main-l-cont p {
+.top-main .top-main-l .top-main-l-cont p {
   margin: 20px auto;
   color: #21201e;
   line-height: 23px;
 }
-main .top-main .top-main-l .top-main-l-cont .pic {
+.top-main .top-main-l .top-main-l-cont .pic {
   margin: 20px auto;
   width: 70px;
 }
-main .top-main .top-main-l .top-main-l-cont .t1,
-main .top-main .top-main-l .top-main-l-cont .t2 {
-  font-weight: 600;
-}
-main .top-main .top-main-l .top-main-l-cont .t1 {
+.top-main .top-main-l .top-main-l-cont .t1 {
   letter-spacing: 1px;
 }
-main .top-main .top-main-l .top-main-l-cont .t2 {
+.top-main .top-main-l .top-main-l-cont .t2 {
   font-size: 0.8rem;
   color: #b6b6b6;
   text-transform: uppercase;
   margin: 5px auto 30px;
 }
-main .top-main .top-main-r {
+.top-main .top-main-r {
   background: url(../img/store-01.jpg) center/cover;
 }
-main .mid-main {
+
+.mid-main {
   background: url(../img/bg-menu-01.jpg) no-repeat;
   background-position-y: bottom;
 }
-main .mid-main h2 {
+.mid-main h2 {
   font-size: 2rem;
   margin: 50px auto 40px;
 }
-main .mid-main .mid-main-menu {
+.mid-main .mid-main-menu {
   margin: 0 auto;
   max-width: 50%;
   height: 1000px;
 }
-main .mid-main .mid-main-menu nav {
+@media screen and (max-width: 1700px) {
+  .mid-main .mid-main-menu {
+    max-width: 80%;
+  }
+}
+.mid-main .mid-main-menu nav {
   height: 90px;
 }
-main .mid-main .mid-main-menu nav ul {
+.mid-main .mid-main-menu nav ul {
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-main .mid-main .mid-main-menu nav ul li {
+.mid-main .mid-main-menu nav ul li {
   padding-bottom: 8px;
   color: #eee;
   border-bottom: 1px solid #eee;
 }
-main .mid-main .mid-main-menu .mid-main-menu-cont {
+.mid-main .mid-main-menu .mid-main-menu-cont {
   border-top: 5px solid #a67245;
   background: #eee;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(4, 1fr);
 }
-main .mid-main .mid-main-menu .mid-main-menu-cont div {
+.mid-main .mid-main-menu .mid-main-menu-cont div {
   display: grid;
   grid-template-columns: 30% 60% 10%;
   align-items: center;
@@ -183,109 +192,111 @@ main .mid-main .mid-main-menu .mid-main-menu-cont div {
   height: 150px;
   border-bottom: 1px dashed #b6b6b6;
 }
-main .mid-main .mid-main-menu .mid-main-menu-cont div p {
+.mid-main .mid-main-menu .mid-main-menu-cont div p {
   text-align: left;
   line-height: 25px;
 }
-main .mid-main .mid-main-menu .mid-main-menu-cont div p .dish-name {
+.mid-main .mid-main-menu .mid-main-menu-cont div p .dish-name {
   font-weight: 1000;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
-main .mid-main .mid-main-menu .mid-main-menu-cont div .price {
+.mid-main .mid-main-menu .mid-main-menu-cont div .price {
   font-weight: 900;
   color: #a67245;
 }
-main .bot-main {
+
+.bot-main {
   margin: 0 auto;
   overflow: auto;
-  background: url(../img/gmap.jpg);
-  background-position: bottom;
-  background-size: 100% 20%;
-  background-repeat: no-repeat;
 }
-main .bot-main .bot-main-booking {
+.bot-main .bot-main-booking {
   max-width: 65%;
   margin: 60px auto;
   display: grid;
   grid-template-columns: 30% 70%;
 }
-main .bot-main .bot-main-booking .bot-main-booking-l {
+@media screen and (max-width: 1300px) {
+  .bot-main .bot-main-booking {
+    display: block;
+  }
+}
+.bot-main .bot-main-booking .bot-main-booking-l {
   color: #eee;
   background: black;
 }
-main .bot-main .bot-main-booking .bot-main-booking-l div {
+.bot-main .bot-main-booking .bot-main-booking-l div {
   margin: 20px;
   border: 1px dashed #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .bot-main .bot-main-booking .bot-main-booking-l div h2 {
+.bot-main .bot-main-booking .bot-main-booking-l div h2 {
   margin: 25px auto;
   line-height: 20px;
 }
-main .bot-main .bot-main-booking .bot-main-booking-l div h2 .p1 {
+.bot-main .bot-main-booking .bot-main-booking-l div h2 .p1 {
   font-size: 2.5rem;
   text-transform: none;
   font-weight: 100;
   font-family: Allura;
   color: #a67245;
 }
-main .bot-main .bot-main-booking .bot-main-booking-l div h2 .p2 {
+.bot-main .bot-main-booking .bot-main-booking-l div h2 .p2 {
   text-transform: uppercase;
   font-family: poppins;
   color: #eee;
   letter-spacing: 1px;
 }
-main .bot-main .bot-main-booking .bot-main-booking-l div img {
+.bot-main .bot-main-booking .bot-main-booking-l div img {
   margin: 10px auto;
 }
-main .bot-main .bot-main-booking .bot-main-booking-l div span {
+.bot-main .bot-main-booking .bot-main-booking-l div span {
   text-transform: uppercase;
   color: #a67245;
   font-weight: 800;
   margin: 30px auto;
   font-size: 1.2rem;
 }
-main .bot-main .bot-main-booking .bot-main-booking-l div p {
+.bot-main .bot-main-booking .bot-main-booking-l div p {
   width: 80%;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r {
+.bot-main .bot-main-booking .bot-main-booking-r {
   color: #21201e;
   background: #eee;
   display: flex;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r div {
+.bot-main .bot-main-booking .bot-main-booking-r div {
   width: 80%;
   height: 80%;
   margin: auto;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r div h2 {
+.bot-main .bot-main-booking .bot-main-booking-r div h2 {
   margin: 20px auto;
   line-height: 30px;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r div h2 .p1 {
+.bot-main .bot-main-booking .bot-main-booking-r div h2 .p1 {
   font-size: 2.5rem;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r div h2 .p2 {
+.bot-main .bot-main-booking .bot-main-booking-r div h2 .p2 {
   font-size: 1.7rem;
   letter-spacing: 1px;
   color: #21201e;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r div img {
+.bot-main .bot-main-booking .bot-main-booking-r div img {
   margin: 20px auto;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r div form {
+.bot-main .bot-main-booking .bot-main-booking-r div form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 100px;
   align-items: center;
   gap: 20px;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r div form input,
-main .bot-main .bot-main-booking .bot-main-booking-r div form select,
-main .bot-main .bot-main-booking .bot-main-booking-r div form option {
+.bot-main .bot-main-booking .bot-main-booking-r div form input,
+.bot-main .bot-main-booking .bot-main-booking-r div form select,
+.bot-main .bot-main-booking .bot-main-booking-r div form option {
   font-weight: 600;
   color: rgb(119, 119, 119);
   text-align: left;
@@ -295,7 +306,7 @@ main .bot-main .bot-main-booking .bot-main-booking-r div form option {
   border: none;
   border-bottom: 1px solid #b6b6b6;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r div form #submit {
+.bot-main .bot-main-booking .bot-main-booking-r div form #submit {
   letter-spacing: 5px;
   font-weight: 800;
   text-transform: uppercase;
@@ -309,25 +320,25 @@ main .bot-main .bot-main-booking .bot-main-booking-r div form #submit {
   cursor: pointer;
   transition: 0.2s;
 }
-main .bot-main .bot-main-booking .bot-main-booking-r div form #submit:hover {
+.bot-main .bot-main-booking .bot-main-booking-r div form #submit:hover {
   transform: translateX(5px);
   box-shadow: 1px 1px 7px 0px rgba(33, 32, 30, 0.6117647059);
 }
-main .bot-main h2 {
+.bot-main h2 {
   margin: 30px auto 10px;
   line-height: 32px;
 }
-main .bot-main h2 .p1 {
+.bot-main h2 .p1 {
   font-size: 2.2rem;
 }
-main .bot-main h2 .p2 {
+.bot-main h2 .p2 {
   letter-spacing: 2px;
   font-size: 1.7rem;
 }
-main .bot-main img {
+.bot-main img {
   margin: 20px auto;
 }
-main .bot-main .bot-main-event {
+.bot-main .bot-main-event {
   max-width: 65%;
   margin: 0 auto 50px;
   display: grid;
@@ -336,16 +347,21 @@ main .bot-main .bot-main-event {
   grid-template-areas: "one three" "two three";
   gap: 20px;
 }
-main .bot-main .bot-main-event .bot-main-event-1 {
+@media screen and (max-width: 1300px) {
+  .bot-main .bot-main-event {
+    display: block;
+  }
+}
+.bot-main .bot-main-event .bot-main-event-1 {
   grid-area: one;
   display: grid;
   grid-template-columns: 40% 60%;
   background: #eee;
 }
-main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l {
+.bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l {
   background: url(../img/event-01.jpg) center/cover no-repeat;
 }
-main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div {
+.bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div {
   color: #eee;
   background: #21201e;
   height: 100px;
@@ -355,14 +371,14 @@ main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div {
   justify-content: center;
   align-items: center;
 }
-main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div p {
+.bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div p {
   line-height: 20px;
 }
-main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div p .part1 {
+.bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-l div p .part1 {
   font-weight: 1000;
   font-size: 2rem;
 }
-main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r {
+.bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -370,18 +386,18 @@ main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r {
   align-items: start;
   line-height: 50px;
 }
-main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r h4 {
+.bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r h4 {
   margin-top: 10px;
   font-weight: 100;
   letter-spacing: 1px;
   font-size: 1.3rem;
 }
-main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r span {
+.bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r span {
   color: #b6b6b6;
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
-main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r button {
+.bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r button {
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -391,17 +407,17 @@ main .bot-main .bot-main-event .bot-main-event-1 .bot-main-event-1-r button {
   margin-top: 20px;
   cursor: pointer;
 }
-main .bot-main .bot-main-event .bot-main-event-2 {
+.bot-main .bot-main-event .bot-main-event-2 {
   grid-area: two;
   background: #eee;
   display: grid;
   grid-template-columns: 40% 60%;
   background: #eee;
 }
-main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l {
+.bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l {
   background: url(../img/event-02.jpg) center/cover no-repeat;
 }
-main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div {
+.bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div {
   color: #eee;
   background: #21201e;
   height: 100px;
@@ -411,14 +427,14 @@ main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div {
   justify-content: center;
   align-items: center;
 }
-main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div p {
+.bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div p {
   line-height: 20px;
 }
-main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div p .part1 {
+.bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-l div p .part1 {
   font-weight: 1000;
   font-size: 2rem;
 }
-main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r {
+.bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -426,18 +442,18 @@ main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r {
   align-items: start;
   line-height: 50px;
 }
-main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r h4 {
+.bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r h4 {
   margin-top: 10px;
   font-weight: 100;
   letter-spacing: 1px;
   font-size: 1.3rem;
 }
-main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r span {
+.bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r span {
   color: #b6b6b6;
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
-main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r button {
+.bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r button {
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -447,20 +463,20 @@ main .bot-main .bot-main-event .bot-main-event-2 .bot-main-event-2-r button {
   margin-top: 20px;
   cursor: pointer;
 }
-main .bot-main .bot-main-event .bot-main-event-3 {
+.bot-main .bot-main-event .bot-main-event-3 {
   grid-area: three;
   background: url(../img/event-03.jpg) center/cover;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
-main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont {
+.bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont {
   height: calc(100% - 60px);
   width: 100%;
   margin: 30px;
   background: #eee;
 }
-main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-date {
+.bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-date {
   color: #eee;
   background: #21201e;
   height: 100px;
@@ -470,14 +486,14 @@ main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-mai
   justify-content: center;
   align-items: center;
 }
-main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-date p {
+.bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-date p {
   line-height: 20px;
 }
-main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-date p .part1 {
+.bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-date p .part1 {
   font-weight: 1000;
   font-size: 2rem;
 }
-main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt {
+.bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt {
   padding: 20px;
   margin: 0 auto;
   width: 80%;
@@ -487,18 +503,18 @@ main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-mai
   align-items: center;
   line-height: 50px;
 }
-main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt h4 {
+.bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt h4 {
   margin-top: 10px;
   font-weight: 100;
   letter-spacing: 1px;
   font-size: 1.3rem;
 }
-main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt span {
+.bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt span {
   color: #b6b6b6;
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
-main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt button {
+.bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-main-event-3-cont-txt button {
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -508,35 +524,38 @@ main .bot-main .bot-main-event .bot-main-event-3 .bot-main-event-3-cont .bot-mai
   margin-top: 70px;
   cursor: pointer;
 }
-main .bot-main .bot-main-quote {
-  max-width: 65%;
-  margin: 200px auto 300px;
+.bot-main .bot-main-quote {
+  position: relative;
+  height: 600px;
 }
-main .bot-main .bot-main-quote div {
+.bot-main .bot-main-quote div {
   position: relative;
   height: 300px;
   background: #eee;
+  max-width: 65%;
+  margin: 200px auto 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
-main .bot-main .bot-main-quote div p {
+.bot-main .bot-main-quote div p {
   line-height: 30px;
   margin: 70px auto 20px;
   width: 90%;
 }
-main .bot-main .bot-main-quote div .partie1 {
+.bot-main .bot-main-quote div .partie1 {
   margin: 10px auto;
   letter-spacing: 1px;
   font-weight: 500;
   font-size: 1.3rem;
 }
-main .bot-main .bot-main-quote div .partie2 {
+.bot-main .bot-main-quote div .partie2 {
   margin: 10px auto 50px;
   color: #a67245;
 }
-main .bot-main .bot-main-quote div:before {
+.bot-main .bot-main-quote div:before {
   position: absolute;
   content: "";
   width: 50px;
@@ -546,6 +565,16 @@ main .bot-main .bot-main-quote div:before {
   transform: translateX(-50%);
   background: url(../img/avatar-02.jpg) center/cover;
   border-radius: 150px;
+}
+.bot-main .bot-main-quote:after {
+  content: "";
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  background: url(../img/gmap.jpg) center/cover;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
 }
 
 footer {
@@ -610,4 +639,9 @@ footer .footer-cont .footer-r div {
 footer .footer-cont .footer-r div i {
   margin: 0 20px;
   color: #b6b6b6;
+  cursor: pointer;
+  transition: 0.2s;
+}
+footer .footer-cont .footer-r div i:hover {
+  transform: scale(1.3);
 }/*# sourceMappingURL=index.css.map */

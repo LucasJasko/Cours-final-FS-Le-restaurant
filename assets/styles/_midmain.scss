@@ -1,0 +1,59 @@
+.mid-main {
+  background: url(../img/bg-menu-01.jpg) no-repeat;
+  background-position-y: bottom;
+  h2 {
+    font-size: 2rem;
+    margin: 50px auto 40px;
+  }
+  .mid-main-menu {
+    margin: 0 auto;
+    max-width: 50%;
+    @media screen and (max-width: 1700px) {
+      max-width: 80%;
+    }
+    height: 1000px;
+    nav {
+      height: 90px;
+      ul {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li {
+          padding-bottom: 8px;
+          color: $white;
+          border-bottom: 1px solid $white;
+        }
+      }
+    }
+    .mid-main-menu-cont {
+      border-top: 5px solid $brown;
+      background: $white;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(4, 1fr);
+      div {
+        display: grid;
+        grid-template-columns: 30% 60% 10%;
+        align-items: center;
+        margin: 20px;
+        height: 150px;
+        border-bottom: 1px dashed $grey;
+        p {
+          text-align: left;
+          line-height: 25px;
+          .dish-name {
+            font-weight: 1000;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+          }
+        }
+        .price {
+          font-weight: 900;
+          color: $brown;
+        }
+        // sinon, pour pointer un enfant direct: > p {...} et ainsi éviter de toucher les p dans les autres enfants
+      }
+    }
+  }
+}

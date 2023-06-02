@@ -1,15 +1,19 @@
 header {
   background: url(../img/bg-slider-06.jpg) center/cover;
+  // ATTENTION: le chemin vers l'emplacement de l'image se fait par rapport à l'emplacement de l'index.css et non par rapport à l'emplacement du header.scss
   height: 100vh;
+  // On peut aussi dire aux enfants de header de faire xvh et xvh pour arriver à 100vh
   color: $white;
   nav {
     margin: 0 auto;
     width: 80%;
+    // pour les réglages globaux de largeur de section, on peut la définir en px
     height: 70px;
     ul {
       height: 100%;
       display: flex;
       justify-content: space-evenly;
+      // ou @include AlignChildren (space-around)
       li {
         width: 100%;
         text-transform: uppercase;
@@ -18,6 +22,7 @@ header {
         align-items: center;
         font-size: 0.8rem;
         font-family: poppins;
+        cursor: pointer;
         &:first-child {
           @include title-p1;
           text-transform: none;
@@ -27,6 +32,10 @@ header {
         }
         i {
           width: 100%;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.3);
+          }
         }
       }
     }

@@ -17,6 +17,18 @@ $black: #21201e;
   font-family: poppins;
   color: $white;
 }
+@mixin ChildCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin AlignChildren($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+// la variable s'applique entre parnethèse au moment d'include la mixin
+// @include AlignChildren(space-between);
 
 body {
   background: grey;
@@ -25,6 +37,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   list-style: none;
   text-align: center;
   font-family: roboto;

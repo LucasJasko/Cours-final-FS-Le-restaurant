@@ -1,0 +1,45 @@
+.top-main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .top-main-l {
+    background: white;
+    .top-main-l-cont {
+      margin: 15px;
+      border: 1px dashed $brown;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        margin: 50px auto 30px;
+        font-size: 2rem;
+        line-height: 15px;
+        .p2 {
+          font-size: 1.1rem;
+          color: $black;
+        }
+      }
+      p {
+        margin: 20px auto;
+        color: $black;
+        line-height: 23px;
+      }
+      .pic {
+        margin: 20px auto;
+        width: 70px;
+      }
+      // pour pointer la énième image du parent on peut utiliser img:nth-of-type(x)
+      .t1 {
+        letter-spacing: 1px;
+      }
+      .t2 {
+        font-size: 0.8rem;
+        color: $grey;
+        text-transform: uppercase;
+        margin: 5px auto 30px;
+      }
+    }
+  }
+  .top-main-r {
+    background: url(../img/store-01.jpg) center/cover;
+  }
+}
